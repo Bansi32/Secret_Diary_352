@@ -1,0 +1,45 @@
+<%-include('../partials/header')%> <%-include('../partials/navbar')%>
+<div class="row">
+  <h1 class="text-center">New Notes</h1>
+  <div class="col-6 offset-3">
+    <form action="/notes" method="POST" novalidate class="validated-form">
+      <div>
+        <label class="form-label" for="title">Title</label>
+        <input
+          class="form-control"
+          type="text"
+          id="title"
+          name="note[title]"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div>
+        <label class="form-label" for="content">Content</label>
+        <input
+          class="form-control"
+          type="text"
+          id="content"
+          name="note[content]"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div>
+        <label class="form-label" for="image">Image Url</label>
+        <input
+          class="form-control"
+          type="text"
+          id="image"
+          name="note[image]"
+          required
+        />
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <button type="submit">Add Notes</button>
+    </form>
+    <a href="/notes">All Notes</a>
+  </div>
+</div>
+
+<%-include('../partials/footer')%>

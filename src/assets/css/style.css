@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #2a1b3d;
+  color: white;
+}
+
+.bg-dark {
+  background-color: #8265a765 !important;
+  padding: 1rem;
+}
+#logo {
+  font-weight: 900;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-family: "Lobster Two", cursive;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "Lobster Two", cursive;
+}
+
+.navbar-expand-xl .navbar-nav .nav-link {
+  padding-right: 2.5rem;
+  padding-left: 0.5rem;
+}
+#navbarMenu {
+  margin-left: 60rem;
+}
+
+#adjustMode {
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
+}
+
+.cont {
+  position: relative;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.cont .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+}
+
+/*main body style*/
+body {
+  background-color: #2a1b3d;
+  color: white;
+}
+.main_div {
+  background-color: #d83f87;
+  margin: 3rem 5rem 5rem;
+}
+.row {
+  padding: 2rem;
+}
+
+/* Login page start*/
+#loginMain {
+  padding: 1rem;
+}
+#option {
+  padding: 2rem;
+}
+
+#option ul {
+  margin-left: 2rem;
+  padding-left: 2rem;
+  font-size: 1.3rem;
+}
+#option li {
+  display: inline-block;
+  margin-right: 2rem;
+  list-style: none;
+}
+
+#option li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+#option li a:hover {
+  font-size: 1.4rem;
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+.form1 .form-control {
+  border-radius: 15px;
+  width: 70%;
+}
+.form1 #user {
+  padding-bottom: 0rem;
+}
+
+.form1 #btn {
+  margin-left: 15rem;
+  width: 20%;
+  border-radius: 20px;
+  background-color: #3f5d8a;
+  border: none;
+}
+/*Login page end*/
+
+/*register form start*/
+
+.form2 .register_div {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.form2 #btn1 {
+  margin-left: 15rem;
+  width: 20%;
+  border-radius: 20px;
+  background-color: #3f5d8a;
+  border: none;
+}
+.form2 .form-control {
+  border-radius: 15px;
+  width: 70%;
+}
+
+/*Image beside form*/
+.col-8 {
+  flex: 0 0 auto;
+  width: 61.666667%;
+  padding-right: 0rem;
+}
+.col-4 {
+  border-left: 2px solid white;
+}
+
+.col-4 .container img {
+  width: 50vh;
+}

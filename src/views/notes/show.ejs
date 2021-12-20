@@ -1,0 +1,11 @@
+<%-include('../partials/header')%> <%-include('../partials/navbar')%>
+<%if(loginUser && note.register.equals(loginUser._id)){%>
+<h3>Title: <%= note.title %></h3>
+<h5>Content: <%= note.content %></h5>
+<img style="width: 100px" src="<%= note.image%> " alt="notes" />
+<form action="/notes/<%= note._id%>?_method=DELETE" method="POST">
+  <button>Delete</button>
+</form>
+<a href="/notes">Back</a>
+<a href="/notes/<%=note._id%>/edit">Edit</a>
+<% } %> <%-include('../partials/footer')%>
