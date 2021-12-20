@@ -16,8 +16,8 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const mongoSanitize = require('express-mongo-sanitize');
 const helmet = require('helmet');
-const dbUrl = process.env.DB_URL //|| "mongodb://localhost:27017/secretdiary";
-const MongoStore  = require("connect-mongo");
+const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/secretdiary";
+const MongoStore = require("connect-mongo");
 const mongoose = require("mongoose");
 
 mongoose.connect(dbUrl)
