@@ -1,4 +1,10 @@
 
+# Secret_Diary_352
+
+To start this app run `npm install` to download node_modules
+
+
+
 ## API Reference
 
 #### Get home page (index page)
