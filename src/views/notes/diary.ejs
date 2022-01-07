@@ -1,13 +1,14 @@
 <%-include('../partials/header')%> <%-include('../partials/navbar')%>
 <br>
-<% for(let notes of note){%>
- <img style="width: 100px;" src="<%=notes.image%>" class="card-img-top" alt="notes" />
-  <div class="card-body">
-   <h5 class="card-title"><%=notes.title %></h5>
-    <a  href="/notes/<%=notes._id %>" class="btn btn-primary">See</a>
-  </div>
-</div> 
-  <%}%>
-
-  <%-include('../partials/footer')%>
+<div id='diaryPage'>
+  <% for(let notes of note){%>
+    <div id='note'>
+     <img style="width: 100px;" src="<%=notes.image%>" class="card-img-top" alt="notes" />
+      <div class="card-body">
+       <h5 class="card-title"><%=notes.title %></h5>
+        <a  href="/notes/<%=notes._id %>" class="btn btn-primary">See</a>
+      </div>
+    </div>
+      <%}%>
 </div>
+  <%-include('../partials/footer')%>

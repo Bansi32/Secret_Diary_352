@@ -1,6 +1,7 @@
 if (process.env.NODE_ENV !== "production") {
     require('dotenv').config();
 }
+
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -26,6 +27,7 @@ mongoose.connect(dbUrl)
 }).catch((e) => {
     console.log(e);
 });
+
 //environmental port to be used as per availability
 const Port = process.env.PORT || 3000; 
 
@@ -67,6 +69,7 @@ const sessionConfig = {
         maxAge:1000 * 60 * 60 * 24 * 7
     }
 }
+
 app.use(session(sessionConfig));
 app.use(flash());
 app.use(helmet());
@@ -155,8 +158,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err });
 });
 
-//default is 8080
+
 app.listen(Port, () => {
-    console.log(`Server is conected to ${Port}`);
-    
+    console.log(`Server is conected to ${Port}`);    
 });

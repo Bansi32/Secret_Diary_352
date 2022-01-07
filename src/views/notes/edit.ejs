@@ -1,7 +1,7 @@
 <%-include('../partials/header')%> <%-include('../partials/navbar')%>
 <div class="row">
-  <h1 class="text-center">Edit Notes</h1>
-  <div class="col-6 offset-3">
+  <h1 class="text-center" id="heading">Edit Notes</h1>
+  <div class="col-6 offset-3" id="AddNotesForm">
     <form
       action="/notes/<%= note._id%>?_method=PUT"
       method="POST"
@@ -17,6 +17,7 @@
           name="note[title]"
           value="<%=note.title%>"
           required
+          placeholder="Enter title"
         />
       </div>
       <div class="valid-feedback">Looks good!</div>
@@ -29,6 +30,7 @@
           name="note[content]"
           value="<%=note.content%>"
           required
+          placeholder="Enter Content"
         />
       </div>
       <div class="valid-feedback">Looks good!</div>
@@ -41,12 +43,16 @@
           name="note[image]"
           value="<%=note.image%> "
           required
+          autocomplete="off"
+          placeholder="Enter image url"
         />
       </div>
       <div class="valid-feedback">Looks good!</div>
-      <button type="submit">Edit Notes</button>
+      <div id="buttons">
+        <button type="submit">Edit Notes</button>
+        <a href="/notes/<%= note._id %> ">Back</a>
+      </div>
     </form>
-    <a href="/notes/<%= note._id %> ">Back</a>
   </div>
 </div>
 

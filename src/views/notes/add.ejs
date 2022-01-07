@@ -1,7 +1,7 @@
 <%-include('../partials/header')%> <%-include('../partials/navbar')%>
 <div class="row">
-  <h1 class="text-center">New Notes</h1>
-  <div class="col-6 offset-3">
+  <h1 class="text-center" id="heading">New Notes</h1>
+  <div class="col-6 offset-3" id="AddNotesForm">
     <form action="/notes" method="POST" novalidate class="validated-form">
       <div>
         <label class="form-label" for="title">Title</label>
@@ -11,17 +11,20 @@
           id="title"
           name="note[title]"
           required
+          placeholder="Enter title"
         />
         <div class="valid-feedback">Looks good!</div>
       </div>
       <div>
-        <label class="form-label" for="content">Content</label>
+        <label class="form-label" for="content" >Content</label>
         <input
           class="form-control"
+          id='content'
           type="text"
           id="content"
           name="note[content]"
           required
+          placeholder="Enter Content"
         />
         <div class="valid-feedback">Looks good!</div>
       </div>
@@ -33,12 +36,16 @@
           id="image"
           name="note[image]"
           required
+          autocomplete="off"
+          placeholder="Enter image url"
         />
         <div class="valid-feedback">Looks good!</div>
       </div>
-      <button type="submit">Add Notes</button>
+      <div id = "buttons"> 
+        <button type="submit">Add Notes</button>
+        <a href="/notes">All Notes</a>
+      </div>
     </form>
-    <a href="/notes">All Notes</a>
   </div>
 </div>
 

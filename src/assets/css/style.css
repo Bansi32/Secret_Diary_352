@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #2a1b3d;
   color: white;
@@ -12,6 +13,7 @@ body {
   background-color: #8265a765 !important;
   padding: 1rem;
 }
+
 #logo {
   font-weight: 900;
   font-size: 1.3rem;
@@ -23,6 +25,7 @@ body {
   font-size: 1.4rem;
   font-family: "Lobster Two", cursive;
 }
+
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-size: 1.4rem;
@@ -33,6 +36,7 @@ body {
   padding-right: 2.5rem;
   padding-left: 0.5rem;
 }
+
 #navbarMenu {
   margin-left: 60rem;
 }
@@ -63,18 +67,23 @@ body {
   background-color: #2a1b3d;
   color: white;
 }
+
 .main_div {
   background-color: #d83f87;
   margin: 3rem 5rem 5rem;
+  border-radius: 4rem;
+  box-shadow: 0rem 2rem 0rem -1rem #d6b4c4;
 }
+
 .row {
-  padding: 2rem;
+  padding: 0rem;
 }
 
 /* Login page start*/
 #loginMain {
   padding: 1rem;
 }
+
 #option {
   padding: 2rem;
 }
@@ -84,6 +93,7 @@ body {
   padding-left: 2rem;
   font-size: 1.3rem;
 }
+
 #option li {
   display: inline-block;
   margin-right: 2rem;
@@ -108,33 +118,43 @@ body {
   border-radius: 15px;
   width: 70%;
 }
+
 .form1 #user {
-  padding-bottom: 0rem;
+  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
+.form1 #pass{
+   padding-bottom: 1rem;
+} 
+
 .form1 #btn {
-  margin-left: 15rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
   width: 20%;
   border-radius: 20px;
   background-color: #3f5d8a;
   border: none;
 }
+
 /*Login page end*/
 
 /*register form start*/
 
 .form2 .register_div {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 0.7rem;
+  padding-top: 0.7rem;
 }
 
 .form2 #btn1 {
-  margin-left: 15rem;
+  margin-left: 7rem;
+  margin-top: 1rem;
   width: 20%;
   border-radius: 20px;
   background-color: #3f5d8a;
   border: none;
 }
+
 .form2 .form-control {
   border-radius: 15px;
   width: 70%;
@@ -144,12 +164,265 @@ body {
 .col-8 {
   flex: 0 0 auto;
   width: 61.666667%;
-  padding-right: 0rem;
+  padding: 2rem 0rem 2rem 4rem;
 }
+
 .col-4 {
-  border-left: 2px solid white;
+  border-left: 3rem solid #ffffffa6;
+  border-radius: 50%;
+  box-shadow: -3rem 0rem 0rem 0rem #ffffffde;
 }
 
 .col-4 .container img {
-  width: 50vh;
+  width: 26rem;
+  padding: 1rem;
+  margin: 5rem 0rem 2rem 0rem;
+}
+/* Add Notes Page*/
+
+#AddNotesForm{
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: 34rem;
+  padding: 4rem 4rem;
+  margin-top: 2rem ;
+  margin-bottom: 3rem;
+  background-color: #d83f87;
+  border-radius: 10px;
+}
+
+#heading{
+  margin-top: 2rem;
+}
+
+#AddNotesForm .form-label{
+  margin: 0.7rem 0rem;
+  font-size: 1.2rem;
+}
+
+#AddNotesForm input{
+  height: 3rem;
+  font-size: 1.2rem;
+}
+
+#AddNotesForm #content{
+  height: 5rem;
+  padding-top: 0;
+}
+
+#AddNotesForm button{
+  width: 10rem;
+  height: 3rem;
+  margin: 2rem 2rem 2rem 14rem;
+  border-radius: 2rem;
+  outline: none;
+  color: white;
+  background-color: #3f5d8a;
+  
+}
+
+#AddNotesForm a{
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+
+}
+
+#buttons{
+  display: flex;
+}
+
+/* show Notes Page */
+#showNotes{
+  background-color: #d83f87;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 60rem;
+  height: 80vh;
+  padding: 3rem 3rem;
+  border-radius: 10px;
+}
+
+#showNotes h3{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#showNotes h5{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#showNotes img{
+  display: flex;
+  margin: auto;
+}
+
+#showNotes button{
+  width: 10rem;
+  height: 3rem;
+  margin: 2rem 2rem 2rem 20rem;
+  border-radius: 2rem;
+  outline: none;
+  color: white;
+  background-color: #3f5d8a;
+}
+
+#showNotes a{
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/*Diary page*/
+#diaryPage{
+  background-color: #d83f87;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 2rem;
+  width: 80rem;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+#diaryPage #note{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin: 2rem;
+  
+}
+
+#diaryPage #note a{
+  margin: 1rem;
+  width: 4rem;
+  border-radius: 10px;
+  background-color: #3f5d8a;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 800px) {
+
+  .main_div{
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .col-4 .container img{
+    width:13rem;
+    margin: 2rem;
+  }
+
+  .col-8{
+    display: flex;
+    margin-left: 4rem;
+    padding: 0;
+    align-items: center;
+  }
+
+  .col-8 #option{
+    margin-top: 1rem;
+    padding-left: 0rem;
+  }
+
+  .col-8 #option ul{
+    padding-left: 0rem;
+    margin-left: 0rem;
+    margin-top: 1.5rem;
+    display: flex;
+  }
+
+  .form2 {
+    padding-left: 0rem;
+    width: 17rem;
+  }
+
+  #loginMain{
+    padding-left: 0rem;
+  }
+
+  .form1{
+    padding-left: 0rem;
+    width: 17rem;
+  }
+
+ .form1 #btn{
+  width: 7rem;
+  margin: 2.5rem;
+  margin-top: 1.5rem;
+ }
+
+ .form2 #btn1 {
+    width: 7rem;
+    margin: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .col-4 {
+    border-left: none;
+    width: 92%;
+    margin-left: 0.8rem;
+    border-top: 32px solid #ffffffab;
+    border-radius: 111px;
+    box-shadow: 0rem -2rem 0rem 0rem #ffffffde;
+   }
+
+   .col-4 .container{
+     margin-left: 0rem;
+     padding-left: 0rem;
+   }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #AddNotesForm{
+    width: 20rem;
+    margin-left: 2.5rem;
+    padding: 2rem;
+  }
+
+  #AddNotesForm button{
+    width: 7rem;
+    margin: 2.5rem 1.5rem 0rem 1rem;
+  }
+
+  #diaryPage{
+    width: 20rem;
+    height: 100vh;
+    margin-bottom: 2rem;
+  }
+  #diaryPage #note{
+    padding-top: 4rem;
+    height: 10rem;
+  }
+
+  #showNotes{
+    width: 20rem;
+  }
+
+  #showNotes button{
+    width: 10rem;
+    margin: 2.5rem 5rem 0rem 1rem;
+  }
+
+  #showNotes a{
+    margin: 1rem 3rem 0rem 5rem;
+  }
+
+  #buttons{
+    display: flex;
+    flex-direction: column;
+  }
 }
